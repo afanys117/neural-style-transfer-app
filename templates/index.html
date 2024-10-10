@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Style Transfer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Style Transfer</h1>
+        <div class="image-boxes">
+            <div class="image-box" id="content-preview">
+                <img src="" alt="Content Image" style="display: none;">
+                <label for="content" class="upload-label">Upload Content Image</label>
+                <input type="file" id="content" accept="image/*" class="upload-input">
+                <h3>Content Image</h3>
+            </div>
+            <div class="image-box" id="style-preview">
+                <img src="" alt="Style Image" style="display: none;">
+                <label for="style" class="upload-label">Upload Style Image</label>
+                <input type="file" id="style" accept="image/*" class="upload-input">
+                <h3>Style Image</h3>
+            </div>
+            <div class="image-box" id="output-preview">
+                <p id="processing-text" style="display: none;">Processing...</p>
+                <img src="" alt="Output Image" style="display: none;">
+                <button id="generate-button">Generate</button>
+                <h3>Output Image</h3>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
