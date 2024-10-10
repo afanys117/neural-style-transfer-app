@@ -3,7 +3,7 @@
 The Neural Style Transfer App allows users to combine the style of one image with the content of another to create an artistic output. The app applies advanced deep learning techniques to generate stunning visuals by transferring the style of famous artworks or patterns to content images.
 
 ### Example
-[Example Image](images/example1.png)
+<img src="images/example1.png" alt="Example Image" width="400"/>
 
 This web application utilizes PyTorch's VGG19 model for extracting content and style features, and combines them using neural style transfer. Users can upload their content and style images to generate an output image that blends both.
 
